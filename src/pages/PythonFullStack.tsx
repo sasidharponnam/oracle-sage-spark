@@ -599,10 +599,13 @@ const PythonFullStack = () => {
                   >
                     <CheckCircle2 className="w-10 h-10 text-primary" />
                   </motion.div>
-                  <h2 className="text-3xl font-bold text-foreground mb-3">You're In! 🎉</h2>
-                  <p className="text-muted-foreground mb-2">We'll contact you within 24 hours.</p>
+                  <h2 className="text-3xl font-bold text-foreground mb-3">🎉 You're Registered!</h2>
+                  <p className="text-muted-foreground mb-2">We'll contact <strong className="text-foreground">{form.fullName}</strong> within 24 hours.</p>
+                  <p className="text-sm text-muted-foreground mb-1">
+                    A confirmation email has been sent to <strong className="text-foreground">{form.email}</strong>
+                  </p>
                   <p className="text-sm text-muted-foreground mb-4">
-                    ✅ Registration successful! You'll receive a WhatsApp message on your number shortly from our team.
+                    ✅ You'll also receive a WhatsApp message shortly from our team.
                   </p>
                   <div className="bg-accent/10 border border-accent/30 rounded-xl p-4 mb-6">
                     <p className="text-sm text-foreground font-medium">💬 Need help? Chat with us anytime using the chat widget below 👇</p>
