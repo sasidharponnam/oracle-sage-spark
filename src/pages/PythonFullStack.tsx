@@ -111,8 +111,10 @@ const PythonFullStack = () => {
 
     setLoading(true);
     try {
+      console.log('📤 Submitting registration...');
+      
       // Step 1: Save to database FIRST
-      const { error } = await supabase.from("registrations").insert({
+      const { data, error } = await supabase.from("registrations").insert({
         full_name: form.fullName,
         email: form.email,
         phone: fullPhone,
@@ -121,37 +123,36 @@ const PythonFullStack = () => {
         year_of_study: form.yearOfStudy,
         heard_from: form.heardFrom,
         consent: form.consent,
-      });
+      }).select();
+      
       if (error) {
-        console.error("Supabase insert error:", error);
+        console.error("❌ Supabase insert error:", error.code, error.message, error.details);
         toast({ title: `Registration failed: ${error.message}`, variant: "destructive" });
         setLoading(false);
         return;
       }
 
+      console.log('✅ Registration saved:', data);
+
       // Step 2: Registration saved — show success immediately
       setSubmitted(true);
+      setLoading(false);
 
       // Step 3: Send admin email in background — failure does NOT affect user
-      try {
-        await sendInquiryEmail({
-          type: "Python Full Stack Program Registration",
-          name: form.fullName,
-          email: form.email,
-          phone: fullPhone,
-          company: form.college,
-          message: `WhatsApp: ${fullWhatsapp}\nYear of Study: ${form.yearOfStudy}\nHeard From: ${form.heardFrom}`,
-        });
-      } catch (emailErr) {
-        console.error("Admin email failed (registration still saved):", emailErr);
-      }
-
-      // TODO: verify EMAIL_SERVICE_API_KEY is set in .env
-      // TODO: Send confirmation email to user (integrate Resend or another provider)
+      sendInquiryEmail({
+        type: "Python Full Stack Program Registration",
+        name: form.fullName,
+        email: form.email,
+        phone: fullPhone,
+        company: form.college,
+        message: `WhatsApp: ${fullWhatsapp}\nYear of Study: ${form.yearOfStudy}\nHeard From: ${form.heardFrom}`,
+      }).catch(emailErr => {
+        console.warn("⚠️ Admin email failed (registration still saved):", emailErr);
+      });
     } catch (err) {
-      console.error("Registration error:", err);
-      toast({ title: `Registration failed: ${err instanceof Error ? err.message : "Unknown error"}`, variant: "destructive" });
-    } finally {
+      console.error("❌ Network/fetch error:", err);
+      const msg = err instanceof Error ? err.message : "Unknown error";
+      toast({ title: `Network error: ${msg}. Please check your connection and try again.`, variant: "destructive" });
       setLoading(false);
     }
   };
