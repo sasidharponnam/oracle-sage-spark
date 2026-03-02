@@ -86,10 +86,17 @@ const Header = () => {
                 <a
                   key={item.label}
                   href={item.href}
-                  className="px-4 py-2 text-sm font-medium text-muted-foreground hover:text-foreground hover:bg-secondary rounded-lg transition-colors"
+                  className={`px-4 py-2 text-sm font-medium rounded-lg transition-colors ${
+                    item.highlight
+                      ? "text-accent hover:bg-accent/10"
+                      : "text-muted-foreground hover:text-foreground hover:bg-secondary"
+                  }`}
                   onClick={() => setIsOpen(false)}
                 >
-                  {item.label}
+                  {item.highlight && "🔥 "}{item.label}
+                  {item.highlight && (
+                    <span className="ml-2 text-[10px] bg-accent text-accent-foreground px-1.5 py-0.5 rounded-full font-bold">New</span>
+                  )}
                 </a>
               ))}
               <div className="flex flex-col gap-2 mt-4 px-4">
