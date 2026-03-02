@@ -65,6 +65,7 @@ const App = () => (
             <Route path="/python-full-stack" element={<PythonFullStack />} />
             <Route path="*" element={<NotFound />} />
           </Routes>
+          <FloatingWidget />
         </BrowserRouter>
       </TooltipProvider>
     </QueryClientProvider>
