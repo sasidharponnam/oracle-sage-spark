@@ -114,7 +114,7 @@ const PythonFullStack = () => {
       console.log('📤 Submitting registration...');
       
       // Step 1: Save to database FIRST
-      const { data, error } = await supabase.from("registrations").insert({
+      const { error } = await supabase.from("registrations").insert({
         full_name: form.fullName,
         email: form.email,
         phone: fullPhone,
@@ -123,7 +123,7 @@ const PythonFullStack = () => {
         year_of_study: form.yearOfStudy,
         heard_from: form.heardFrom,
         consent: form.consent,
-      }).select();
+      });
       
       if (error) {
         console.error("❌ Supabase insert error:", error.code, error.message, error.details);
