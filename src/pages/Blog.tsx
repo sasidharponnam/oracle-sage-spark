@@ -44,7 +44,7 @@ const Blog = () => {
   const [loading, setLoading] = useState(true);
   const [searchQuery, setSearchQuery] = useState("");
   const [selectedCategory, setSelectedCategory] = useState<string | null>(null);
-  const [selectedBlog, setSelectedBlog] = useState<Blog | null>(null);
+  const navigate = useNavigate();
 
   const categories = ["All", "Database", "Cloud", "DevOps", "AI & Automation"];
 
