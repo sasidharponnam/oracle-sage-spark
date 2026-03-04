@@ -233,7 +233,7 @@ const Blog = () => {
                         variant="ghost"
                         size="sm"
                         className="group/btn"
-                        onClick={() => setSelectedBlog(blog)}
+                        onClick={() => navigate(`/blog/${blog.slug}`)}
                       >
                         Read More
                         <ArrowRight className="ml-2 h-4 w-4 group-hover/btn:translate-x-1 transition-transform" />
