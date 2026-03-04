@@ -8,6 +8,7 @@ import Index from "./pages/Index";
 import Services from "./pages/Services";
 import Courses from "./pages/Courses";
 import Blog from "./pages/Blog";
+import BlogPost from "./pages/BlogPost";
 import OracleManagedServices from "./pages/services/OracleManagedServices";
 import CloudTransformation from "./pages/services/CloudTransformation";
 import DevOpsSRE from "./pages/services/DevOpsSRE";
@@ -47,6 +48,7 @@ const App = () => (
             <Route path="/services" element={<Services />} />
             <Route path="/courses" element={<Courses />} />
             <Route path="/blog" element={<Blog />} />
+            <Route path="/blog/:slug" element={<BlogPost />} />
             <Route path="/services/oracle-managed-services" element={<OracleManagedServices />} />
             <Route path="/services/cloud-transformation" element={<CloudTransformation />} />
             <Route path="/services/devops-sre" element={<DevOpsSRE />} />
