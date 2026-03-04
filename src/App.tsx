@@ -8,6 +8,7 @@ import Index from "./pages/Index";
 import Services from "./pages/Services";
 import Courses from "./pages/Courses";
 import Blog from "./pages/Blog";
+import BlogPost from "./pages/BlogPost";
 import OracleManagedServices from "./pages/services/OracleManagedServices";
 import CloudTransformation from "./pages/services/CloudTransformation";
 import DevOpsSRE from "./pages/services/DevOpsSRE";
