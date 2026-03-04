@@ -274,7 +274,12 @@ const Blog = () => {
               </div>
               <div className="prose prose-lg max-w-none text-foreground">
                 <p className="text-lg text-muted-foreground mb-6">{selectedBlog.excerpt}</p>
-                <p className="whitespace-pre-wrap">{selectedBlog.content}</p>
+                {selectedBlog.content && (
+                  <div 
+                    className="blog-html-content"
+                    dangerouslySetInnerHTML={{ __html: selectedBlog.content }} 
+                  />
+                )}
               </div>
             </div>
           </motion.div>
