@@ -40,9 +40,9 @@ const HeroSection = () => {
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6, delay: 0.1 }}
           >
-            <span className="text-gradient-primary">AI-Powered</span> Managed
+            <span className="text-gradient-primary">Your IT Runs.</span> Your
             <br />
-            <span className="text-muted-foreground">Services at Scale</span>
+            <span className="text-muted-foreground">Business Grows.</span>
           </motion.h1>
           
           {/* Subheadline */}
