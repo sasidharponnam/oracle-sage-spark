@@ -34,8 +34,9 @@ const queryClient = new QueryClient();
 const GA4RouteTracker = () => {
   const location = useLocation();
   useEffect(() => {
-    if (typeof window.gtag === 'function') {
-      window.gtag('config', 'G-18L5003T08', {
+    const w = window as any;
+    if (typeof w.gtag === 'function') {
+      w.gtag('config', 'G-18L5003T08', {
         page_path: location.pathname + location.search,
       });
     }
