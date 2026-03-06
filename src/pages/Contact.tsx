@@ -66,6 +66,7 @@ const Contact = () => {
     });
 
     if (success) {
+      const w = window as any; if (typeof w.gtag === 'function') w.gtag('event', 'contact_form_submit', { page_path: '/contact' });
       toast.success("Message sent successfully! We'll get back to you soon.");
       setFormData({ name: "", email: "", phone: "", company: "", message: "" });
     } else {

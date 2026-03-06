@@ -105,6 +105,7 @@ const GetStarted = () => {
     setIsSubmitting(false);
 
     if (success) {
+      const w = window as any; if (typeof w.gtag === 'function') w.gtag('event', 'consultation_form_submit', { company_size: formData.companySize, services: formData.services.join(','), timeline: formData.timeline });
       toast.success("Request submitted! We'll contact you within 24 hours.");
       setFormData({
         firstName: "",
