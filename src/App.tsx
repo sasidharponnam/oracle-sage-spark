@@ -31,6 +31,18 @@ import PythonFullStackWidget from "./components/PythonFullStackWidget";
 
 const queryClient = new QueryClient();
 
+const GA4RouteTracker = () => {
+  const location = useLocation();
+  useEffect(() => {
+    if (typeof window.gtag === 'function') {
+      window.gtag('config', 'G-18L5003T08', {
+        page_path: location.pathname + location.search,
+      });
+    }
+  }, [location]);
+  return null;
+};
+
 const FloatingWidget = () => {
   const location = useLocation();
   if (location.pathname === "/python-full-stack") return null;
