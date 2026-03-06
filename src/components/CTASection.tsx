@@ -27,13 +27,13 @@ const CTASection = () => {
           </span>
           
           <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold mb-6">
-            Ready to Transform Your{" "}
-            <span className="text-gradient-primary">Enterprise IT?</span>
+            Scale Your Infrastructure,{" "}
+            <span className="text-gradient-primary">Not Your Headcount</span>
           </h2>
           
           <p className="text-muted-foreground text-lg md:text-xl mb-10 max-w-2xl mx-auto">
-            Partner with seasoned architects and engineers who understand mission-critical 
-            enterprise environments. Get a custom assessment today.
+            From Oracle RAC to Kubernetes clusters — our engineers extend your team with 
+            deep expertise across databases, cloud, and DevOps. Talk to our team today.
           </p>
           
           <div className="flex flex-col sm:flex-row items-center justify-center gap-4 mb-12">
