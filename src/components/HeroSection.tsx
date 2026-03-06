@@ -52,8 +52,8 @@ const HeroSection = () => {
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6, delay: 0.2 }}
           >
-            Expert team delivering enterprise-grade PostgreSQL, Oracle, DevOps, SRE, and AI-enabled managed services. 
-            Your uptime is our reputation.
+            We manage Oracle, Cloud, and DevOps infrastructure so your team can focus on 
+            what drives revenue. Backed by a 99.99% uptime SLA and 24/7 global operations.
           </motion.p>
           
           {/* CTAs */}
