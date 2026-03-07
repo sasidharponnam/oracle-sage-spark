@@ -99,6 +99,7 @@ const Careers = () => {
       <SEO
         title="Careers"
         description="Join Paramanu Consulting and work on challenging enterprise IT projects with a talented remote-first team."
+        keywords="IT careers India, Oracle DBA jobs, DevOps engineer jobs, remote IT jobs, enterprise consulting careers"
         url="https://www.paramanuconsulting.com/careers"
         structuredData={careersSchema}
       />

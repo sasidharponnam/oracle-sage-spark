@@ -17,7 +17,7 @@ const defaultMeta = {
   title: 'Paramanu Consulting | Enterprise Oracle, Cloud & DevOps Managed Services',
   description: 'Tier-1 Enterprise IT Consulting with 20+ years of Oracle, Cloud, DevOps, SRE, and AI-enabled Managed Services for Fortune 500 organizations. 99.99% uptime SLA.',
   keywords: 'Oracle consulting, enterprise IT services, DevOps, SRE, cloud migration, managed services, AI operations, Fortune 500 IT, Oracle DBA, cloud transformation',
-  image: 'https://www.paramanuconsulting.com/paramanu-linkedin-logo.png',
+  image: 'https://www.paramanuconsulting.com/og-banner.png',
   url: 'https://www.paramanuconsulting.com',
 };
 
@@ -43,9 +43,9 @@ const SEO = ({
     '@type': 'Organization',
     name: 'Paramanu Consulting',
     url: 'https://www.paramanuconsulting.com',
-    logo: 'https://www.paramanuconsulting.com/paramanu-linkedin-logo.png',
+    logo: 'https://www.paramanuconsulting.com/og-banner.png',
     description: defaultMeta.description,
-    foundingDate: '2020',
+    foundingDate: '2025',
     sameAs: [
       'https://www.linkedin.com/company/paramanu-consulting',
     ],
@@ -72,7 +72,7 @@ const SEO = ({
     '@type': 'ProfessionalService',
     name: 'Paramanu Consulting',
     url: 'https://www.paramanuconsulting.com',
-    image: 'https://www.paramanuconsulting.com/paramanu-linkedin-logo.png',
+    image: 'https://www.paramanuconsulting.com/og-banner.png',
     description: defaultMeta.description,
     priceRange: '$$$',
     address: {
