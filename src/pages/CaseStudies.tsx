@@ -84,6 +84,7 @@ const CaseStudies = () => {
       <SEO
         title="Case Studies"
         description="Explore success stories from our enterprise IT consulting projects including Oracle migrations, DevOps transformations, and managed services."
+        keywords="Oracle migration case study, DevOps transformation success, cloud migration results, enterprise IT consulting case studies"
         url="https://www.paramanuconsulting.com/case-studies"
         structuredData={caseStudiesSchema}
       />

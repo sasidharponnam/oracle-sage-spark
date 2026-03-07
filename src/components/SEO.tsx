@@ -72,7 +72,7 @@ const SEO = ({
     '@type': 'ProfessionalService',
     name: 'Paramanu Consulting',
     url: 'https://www.paramanuconsulting.com',
-    image: 'https://www.paramanuconsulting.com/paramanu-linkedin-logo.png',
+    image: 'https://www.paramanuconsulting.com/og-banner.png',
     description: defaultMeta.description,
     priceRange: '$$$',
     address: {

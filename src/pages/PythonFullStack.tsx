@@ -314,6 +314,7 @@ const PythonFullStack = () => {
       <SEO
         title="Python Full Stack Developer Program | Paramanu Consulting"
         description="Become a Python Full Stack Developer in 4 months. Live mentorship, job assistance, mock interviews. Built for B.Tech students ready to get hired."
+        keywords="Python full stack course India, Python bootcamp with placement, full stack developer program, Python Django React course, Python job assistance program, B.Tech Python training"
         url="https://www.paramanuconsulting.com/python-full-stack"
         structuredData={structuredData}
       />
