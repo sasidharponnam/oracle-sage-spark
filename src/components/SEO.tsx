@@ -45,7 +45,7 @@ const SEO = ({
     url: 'https://www.paramanuconsulting.com',
     logo: 'https://www.paramanuconsulting.com/paramanu-linkedin-logo.png',
     description: defaultMeta.description,
-    foundingDate: '2020',
+    foundingDate: '2025',
     sameAs: [
       'https://www.linkedin.com/company/paramanu-consulting',
     ],
