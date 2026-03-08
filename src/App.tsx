@@ -26,6 +26,9 @@ import Leadership from "./pages/Leadership";
 import CaseStudies from "./pages/CaseStudies";
 import Careers from "./pages/Careers";
 import PythonFullStack from "./pages/PythonFullStack";
+import PrivacyPolicy from "./pages/PrivacyPolicy";
+import Terms from "./pages/Terms";
+import Cookies from "./pages/Cookies";
 import NotFound from "./pages/NotFound";
 import PythonFullStackWidget from "./components/PythonFullStackWidget";
 
