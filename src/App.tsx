@@ -31,6 +31,7 @@ import Terms from "./pages/Terms";
 import Cookies from "./pages/Cookies";
 import NotFound from "./pages/NotFound";
 import PythonFullStackWidget from "./components/PythonFullStackWidget";
+import ExitIntentPopup from "./components/ExitIntentPopup";
 
 const queryClient = new QueryClient();
 
