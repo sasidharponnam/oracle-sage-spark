@@ -1,5 +1,14 @@
 import { motion } from "framer-motion";
 import { Database, Settings, Cpu, Shield, Headphones, Users, Briefcase, Globe, BarChart3 } from "lucide-react";
+
+const serviceRoutes: Record<string, string> = {
+  "Oracle Managed Services": "/services/oracle-managed-services",
+  "DevOps Services": "/services/devops-sre",
+  "SRE Services": "/services/devops-sre",
+  "Automation & AI-Enabled": "/services/ai-enabled-operations",
+  "Production Support": "/services/production-support",
+};
+
 const services = [
   {
     icon: Database,
@@ -114,38 +123,50 @@ const ServicesSection = () => {
           whileInView="visible"
           viewport={{ once: true, margin: "-100px" }}
         >
-          {services.map((service, index) => (
-            <motion.div
-              key={service.title}
-              variants={cardVariants}
-              className="group relative"
-            >
-              <div className="glass-card rounded-2xl p-6 md:p-8 h-full transition-all duration-500 hover:shadow-elevated hover:border-primary/30 hover:-translate-y-1">
-                {/* Icon */}
-                <div className="mb-6 inline-flex items-center justify-center w-14 h-14 rounded-xl bg-primary/10 text-primary group-hover:bg-primary group-hover:text-primary-foreground transition-all duration-300">
-                  <service.icon className="w-7 h-7" />
+          {services.map((service, index) => {
+            const route = serviceRoutes[service.title];
+            return (
+              <motion.div
+                key={service.title}
+                variants={cardVariants}
+                className="group relative"
+              >
+                <div className="glass-card rounded-2xl p-6 md:p-8 h-full transition-all duration-500 hover:shadow-elevated hover:border-primary/30 hover:-translate-y-1">
+                  {/* Icon */}
+                  <div className="mb-6 inline-flex items-center justify-center w-14 h-14 rounded-xl bg-primary/10 text-primary group-hover:bg-primary group-hover:text-primary-foreground transition-all duration-300">
+                    <service.icon className="w-7 h-7" />
+                  </div>
+                  
+                  {/* Content */}
+                  <h3 className="text-xl font-bold mb-3 group-hover:text-primary transition-colors">
+                    {service.title}
+                  </h3>
+                  <p className="text-muted-foreground mb-6 leading-relaxed">
+                    {service.description}
+                  </p>
+                  
+                  {/* Features */}
+                  <ul className="space-y-2">
+                    {service.features.map((feature) => (
+                      <li key={feature} className="flex items-center gap-2 text-sm text-muted-foreground">
+                        <span className="w-1.5 h-1.5 rounded-full bg-primary/60" />
+                        {feature}
+                      </li>
+                    ))}
+                  </ul>
+
+                  {route && (
+                    <a
+                      href={route}
+                      className="inline-block mt-6 text-sm font-medium text-primary hover:underline"
+                    >
+                      Learn more →
+                    </a>
+                  )}
                 </div>
-                
-                {/* Content */}
-                <h3 className="text-xl font-bold mb-3 group-hover:text-primary transition-colors">
-                  {service.title}
-                </h3>
-                <p className="text-muted-foreground mb-6 leading-relaxed">
-                  {service.description}
-                </p>
-                
-                {/* Features */}
-                <ul className="space-y-2">
-                  {service.features.map((feature) => (
-                    <li key={feature} className="flex items-center gap-2 text-sm text-muted-foreground">
-                      <span className="w-1.5 h-1.5 rounded-full bg-primary/60" />
-                      {feature}
-                    </li>
-                  ))}
-                </ul>
-              </div>
-            </motion.div>
-          ))}
+              </motion.div>
+            );
+          })}
         </motion.div>
       </div>
     </section>
