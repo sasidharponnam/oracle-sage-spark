@@ -84,12 +84,14 @@ const App = () => (
             <Route path="/case-studies" element={<CaseStudies />} />
             <Route path="/careers" element={<Careers />} />
             <Route path="/python-full-stack" element={<PythonFullStack />} />
+            <Route path="/marketing-assets" element={<MarketingAssets />} />
             <Route path="/privacy-policy" element={<PrivacyPolicy />} />
             <Route path="/terms" element={<Terms />} />
             <Route path="/cookies" element={<Cookies />} />
             <Route path="*" element={<NotFound />} />
           </Routes>
           <FloatingWidget />
+          <ExitIntentPopup />
         </BrowserRouter>
       </TooltipProvider>
     </QueryClientProvider>
