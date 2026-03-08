@@ -100,11 +100,11 @@ const Header = () => {
                 </a>
               ))}
               <div className="flex flex-col gap-2 mt-4 px-4">
-                <Button variant="outline" size="sm" className="w-full">
-                  Client Portal
+                <Button variant="outline" size="sm" className="w-full" asChild>
+                  <a href="/client-portal">Client Portal</a>
                 </Button>
-                <Button variant="default" size="sm" className="w-full">
-                  Get Started
+                <Button variant="default" size="sm" className="w-full" asChild>
+                  <a href="/get-started">Get Started</a>
                 </Button>
               </div>
             </nav>

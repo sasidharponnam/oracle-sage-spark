@@ -10,6 +10,7 @@ const stats = [
 const StatsSection = () => {
   return (
     <section className="relative py-20 md:py-28">
+      <h2 className="sr-only">Company Statistics</h2>
       {/* Gradient overlay */}
       <div className="absolute inset-0 bg-gradient-to-b from-secondary/30 to-background" />
       

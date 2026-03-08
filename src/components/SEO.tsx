@@ -81,11 +81,6 @@ const SEO = ({
       addressRegion: 'Worldwide',
       addressCountry: 'US',
     },
-    geo: {
-      '@type': 'GeoCoordinates',
-      latitude: '37.7749',
-      longitude: '-122.4194',
-    },
     openingHoursSpecification: {
       '@type': 'OpeningHoursSpecification',
       dayOfWeek: ['Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday'],

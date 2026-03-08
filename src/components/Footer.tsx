@@ -17,13 +17,13 @@ const Footer = () => {
               Tier-1 Enterprise IT Consulting, Oracle Architecture, and AI-Enabled Managed Services for Modern Enterprises.
             </p>
             <div className="flex items-center gap-3">
-              <a href="#" className="w-9 h-9 rounded-lg bg-secondary flex items-center justify-center text-muted-foreground hover:bg-primary hover:text-primary-foreground transition-all">
+              <a href="https://www.linkedin.com/company/paramanu-consulting" target="_blank" rel="noopener noreferrer" aria-label="Paramanu Consulting on LinkedIn" className="w-9 h-9 rounded-lg bg-secondary flex items-center justify-center text-muted-foreground hover:bg-primary hover:text-primary-foreground transition-all">
                 <Linkedin className="w-4 h-4" />
               </a>
-              <a href="#" className="w-9 h-9 rounded-lg bg-secondary flex items-center justify-center text-muted-foreground hover:bg-primary hover:text-primary-foreground transition-all">
+              <a href="https://twitter.com/ParamanuConsulting" target="_blank" rel="noopener noreferrer" aria-label="Paramanu Consulting on Twitter" className="w-9 h-9 rounded-lg bg-secondary flex items-center justify-center text-muted-foreground hover:bg-primary hover:text-primary-foreground transition-all">
                 <Twitter className="w-4 h-4" />
               </a>
-              <a href="#" className="w-9 h-9 rounded-lg bg-secondary flex items-center justify-center text-muted-foreground hover:bg-primary hover:text-primary-foreground transition-all">
+              <a href="mailto:info@paramanuconsulting.com" target="_blank" rel="noopener noreferrer" aria-label="Email Paramanu Consulting" className="w-9 h-9 rounded-lg bg-secondary flex items-center justify-center text-muted-foreground hover:bg-primary hover:text-primary-foreground transition-all">
                 <Mail className="w-4 h-4" />
               </a>
             </div>
@@ -70,9 +70,9 @@ const Footer = () => {
         <div className="pt-8 border-t border-border/50 flex flex-col md:flex-row items-center justify-between gap-4 text-sm text-muted-foreground">
           <p>© {currentYear} Paramanu Consulting. All rights reserved.</p>
           <div className="flex items-center gap-6">
-            <a href="#" className="hover:text-primary transition-colors">Privacy Policy</a>
-            <a href="#" className="hover:text-primary transition-colors">Terms of Service</a>
-            <a href="#" className="hover:text-primary transition-colors">Cookie Settings</a>
+            <a href="/privacy-policy" className="hover:text-primary transition-colors">Privacy Policy</a>
+            <a href="/terms" className="hover:text-primary transition-colors">Terms of Service</a>
+            <a href="/cookies" className="hover:text-primary transition-colors">Cookie Settings</a>
           </div>
         </div>
       </div>

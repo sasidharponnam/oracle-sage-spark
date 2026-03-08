@@ -21,9 +21,9 @@ const TrustSection = () => {
           transition={{ duration: 0.5 }}
           className="text-center mb-10"
         >
-          <p className="text-muted-foreground text-sm uppercase tracking-wider font-medium mb-3">
+          <h2 className="text-muted-foreground text-sm uppercase tracking-wider font-medium mb-3">
             Our Core Expertise
-          </p>
+          </h2>
           <p className="text-muted-foreground text-sm md:text-base max-w-2xl mx-auto">
             We've managed production Oracle and cloud environments since before "DevOps" was a job title. 
             Our team operates under strict SLAs — not vague promises — with dedicated engineers assigned to your account, not a shared help desk. 

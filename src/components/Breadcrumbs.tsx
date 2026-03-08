@@ -72,7 +72,7 @@ const Breadcrumbs = ({ items, className }: BreadcrumbsProps) => {
       "@type": "ListItem",
       position: index + 1,
       name: item.label,
-      item: item.href ? `https://paramanu.com${item.href}` : undefined,
+      item: item.href ? `https://www.paramanuconsulting.com${item.href}` : undefined,
     })),
   };
 
