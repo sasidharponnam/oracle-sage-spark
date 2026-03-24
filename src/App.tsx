@@ -26,6 +26,7 @@ import Leadership from "./pages/Leadership";
 import CaseStudies from "./pages/CaseStudies";
 import Careers from "./pages/Careers";
 import PythonFullStack from "./pages/PythonFullStack";
+import PythonFullStackAIAgents from "./pages/PythonFullStackAIAgents";
 import MarketingAssets from "./pages/MarketingAssets";
 import PrivacyPolicy from "./pages/PrivacyPolicy";
 import Terms from "./pages/Terms";
