@@ -54,10 +54,10 @@ const ProgramPopup = () => {
 
             <div className="text-5xl mb-4">🚀</div>
             <h2 className="text-2xl font-bold text-foreground mb-2">
-              Launch Your Tech Career in 4 Months
+              Master Full Stack + AI Agents
             </h2>
             <p className="text-muted-foreground mb-6">
-              <span className="text-primary font-semibold">Python Full Stack Developer Program</span> — Batch Starting Soon!
+              <span className="text-primary font-semibold">Python Full Stack + AI Agents Program</span> — Batch Starting Soon!
             </p>
             <Button variant="hero" size="lg" className="w-full mb-3" onClick={handleExplore}>
               Explore Program →
