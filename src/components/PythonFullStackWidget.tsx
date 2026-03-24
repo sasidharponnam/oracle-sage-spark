@@ -43,7 +43,7 @@ const PythonFullStackWidget = () => {
             >
               <div className="p-6">
                 <div className="flex items-center justify-between mb-6">
-                  <h3 className="text-lg font-bold text-foreground">Python Full Stack Developer</h3>
+                  <h3 className="text-lg font-bold text-foreground">Python Full Stack + AI Agents</h3>
                   <button onClick={() => setPanelOpen(false)} className="p-1 rounded-md hover:bg-secondary text-muted-foreground">
                     <X className="w-5 h-5" />
                   </button>
