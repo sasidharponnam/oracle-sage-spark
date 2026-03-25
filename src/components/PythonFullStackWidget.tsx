@@ -75,9 +75,8 @@ const PythonFullStackWidget = () => {
 
                 {/* Price */}
                 <div className="text-center mb-6 p-4 rounded-xl bg-secondary/50 border border-border/50">
-                  <div className="text-sm text-muted-foreground line-through">₹34,000</div>
-                  <div className="text-3xl font-bold text-foreground">₹25,000</div>
-                  <div className="text-xs text-accent font-semibold">Save ₹9,000 — Limited Time</div>
+                  <div className="text-3xl font-bold text-foreground">₹22,000</div>
+                  <div className="text-xs text-muted-foreground">All inclusive</div>
                 </div>
 
                 {/* Buttons */}

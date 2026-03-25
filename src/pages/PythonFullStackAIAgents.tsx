@@ -269,14 +269,6 @@ const PythonFullStackAIAgents = () => {
     "JavaScript", "HTML5", "CSS3", "OOP", "SQL",
   ];
 
-  const valueBreakdown = [
-    { item: "Full Stack + AI Curriculum (10–14 weeks)", value: "₹15,000" },
-    { item: "AI Agents & LangChain Module", value: "₹5,000" },
-    { item: "Mock Interviews (Tech + HR)", value: "₹5,000" },
-    { item: "Job Assistance & Referrals", value: "₹3,000" },
-    { item: "Communication Skills Workshop", value: "₹2,000" },
-    { item: "Live Mentorship & Support", value: "₹4,000" },
-  ];
 
   const hiringPartners = [
     "TCS", "Infosys", "Wipro", "HCL Tech", "Tech Mahindra", "Cognizant",
@@ -461,31 +453,15 @@ const PythonFullStackAIAgents = () => {
           </div>
         </section>
 
-        {/* Value Breakdown */}
+        {/* Course Fee */}
         <section className="py-16 md:py-24 bg-secondary/30">
           <div className="container max-w-3xl">
-            <motion.div className="text-center mb-10" {...fadeInUp}>
-              <h2 className="text-3xl md:text-4xl font-bold mb-4">What You Get for ₹25,000</h2>
-              <p className="text-muted-foreground">Total value worth ₹34,000+ — all included in one program</p>
-            </motion.div>
-            <motion.div {...fadeInUp}>
-              <Card className="bg-card border-primary/20 overflow-hidden">
-                <CardContent className="p-0">
-                  {valueBreakdown.map((item, i) => (
-                    <div key={i} className={`flex items-center justify-between px-6 py-4 ${i < valueBreakdown.length - 1 ? "border-b border-border/30" : ""}`}>
-                      <span className="flex items-center gap-3 text-foreground">
-                        <CheckCircle2 className="w-5 h-5 text-primary shrink-0" />
-                        {item.item}
-                      </span>
-                      <span className="text-sm font-semibold text-accent whitespace-nowrap">worth {item.value}</span>
-                    </div>
-                  ))}
-                  <div className="flex items-center justify-between px-6 py-4 bg-primary/10 border-t border-primary/20">
-                    <span className="font-bold text-foreground text-lg">You Pay</span>
-                    <span className="font-bold text-primary text-2xl">₹25,000</span>
-                  </div>
-                </CardContent>
-              </Card>
+            <motion.div className="text-center" {...fadeInUp}>
+              <h2 className="text-3xl md:text-4xl font-bold mb-4">Course Fee</h2>
+              <div className="inline-block bg-card border border-primary/20 rounded-2xl px-12 py-8">
+                <span className="text-5xl font-bold text-primary">₹22,000</span>
+                <p className="text-muted-foreground mt-2">All inclusive — no hidden charges</p>
+              </div>
             </motion.div>
           </div>
         </section>
@@ -554,9 +530,8 @@ const PythonFullStackAIAgents = () => {
                 </div>
                 <CardContent className="p-6">
                   <div className="text-center mb-6">
-                    <div className="text-sm text-muted-foreground line-through">₹34,000</div>
-                    <span className="text-5xl font-bold text-foreground">₹25,000</span>
-                    <div className="text-sm text-accent font-semibold mt-1">Save ₹9,000 — Limited Time</div>
+                    <span className="text-5xl font-bold text-foreground">₹22,000</span>
+                    <p className="text-sm text-muted-foreground mt-1">All inclusive</p>
                   </div>
                   <ul className="space-y-3 mb-6">
                     {["Full Stack + AI Curriculum", "AI Agents with LangChain", "Mock Interviews (Tech + HR)", "Job Assistance & Referrals", "Communication Skills Workshop", "Live Mentorship & Capstone"].map((item) => (
