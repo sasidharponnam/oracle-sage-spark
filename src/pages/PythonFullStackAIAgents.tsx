@@ -257,9 +257,9 @@ const PythonFullStackAIAgents = () => {
   ];
 
   const testimonials = [
-    { name: "Priya S.", college: "JNTU Hyderabad", text: "The AI agents module was mind-blowing. I built a real working agent in just 2 days!", rating: 4.6 },
-    { name: "Rahul K.", college: "VIT Vellore", text: "Learning FastAPI + React + AI together gave me a massive edge in interviews.", rating: 4.5 },
-    { name: "Ananya M.", college: "SRM Chennai", text: "The mentors made sure I understood every concept deeply — especially the AI integration part.", rating: 4.4 },
+    { name: "Priya S.", college: "JNTU Hyderabad", text: "Got placed at a startup last month. The FastAPI and AI modules were directly useful in my technical round.", rating: 4.6 },
+    { name: "Rahul K.", college: "VIT Vellore", text: "The way each topic was explained with examples made it easy to follow. No complaints on the teaching side.", rating: 4.5 },
+    { name: "Ananya M.", college: "SRM Chennai", text: "Explanations were clear and the hands-on projects helped more. Good course overall.", rating: 4.4 },
   ];
 
   const skillBadges = [
