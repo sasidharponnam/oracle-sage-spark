@@ -269,14 +269,6 @@ const PythonFullStackAIAgents = () => {
     "JavaScript", "HTML5", "CSS3", "OOP", "SQL",
   ];
 
-  const valueBreakdown = [
-    { item: "Full Stack + AI Curriculum (10–14 weeks)", value: "₹15,000" },
-    { item: "AI Agents & LangChain Module", value: "₹5,000" },
-    { item: "Mock Interviews (Tech + HR)", value: "₹5,000" },
-    { item: "Job Assistance & Referrals", value: "₹3,000" },
-    { item: "Communication Skills Workshop", value: "₹2,000" },
-    { item: "Live Mentorship & Support", value: "₹4,000" },
-  ];
 
   const hiringPartners = [
     "TCS", "Infosys", "Wipro", "HCL Tech", "Tech Mahindra", "Cognizant",
